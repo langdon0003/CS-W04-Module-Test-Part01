@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Module Test Part 1</title>
+  </head>
+  <body>
+    <h2>Module Test Part 1: Questions</h2>
+    <div class="section">
+      <h3>Section 1: CLI (5%)</h3>
+
+      <div class="question"><strong>Question 1: </strong>What is CLI?</div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        CLI is stands for "Command Line Interface" - a command line program that
+        get text input to execute operating system. At the beginning of computer
+        era, there is no User Interface like macOS or Windows 11, only way to
+        work and interact and "command" to computer is computer terminals.
+      </div>
+
+      <div class="question">
+        <strong>Question 2: </strong>What is the advantage/disadvantage of CLI?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <div>
+          <strong>Pros:</strong>
+        </div>
+        <ul>
+          <li>
+            Command and interact with operating system (OS) faster, shortcut
+            typing command without many mouse clicks
+          </li>
+          <li>
+            Save memory and CPU consumption, runnable on any screen with low
+            resolution (limiting as the beginning), due to simple, lightweight
+            User Interface, just solid black background and white text
+          </li>
+        </ul>
+        <div>
+          <strong>Cons:</strong>
+        </div>
+        <ul>
+          <li>Need a high learning curve before get familiar with it</li>
+          <li>
+            Need to learn by hear all - a lot command text, if not typing
+            correctly it will fails
+          </li>
+        </ul>
+      </div>
+      <div class="question">
+        <strong>Question 3: </strong>Which do you prefer, CLI or GUI (Graphical
+        User Interface)? Why?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        I prefer CLI in the most case, because it faster in almost operation
+        when coding, I also try to using more shortcut with other apps besides
+        Terminal, but some operation especially when working with Front-End I
+        must user GUI.
+      </div>
+      <div class="question">
+        <strong>Question 4: </strong>Which command to check your current
+        directory?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        In linux Terminal I user <code>pwd</code> that stands for
+        <code>Print Working Directory</code> In windows Terminal we can use
+        <code>cd</code> as a tip for equivalent result
+      </div>
+      <div class="question">
+        <strong>Question 5: </strong>Which command to create a new
+        folder/directory?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>mkdir</code> to create new folder/directory.
+      </div>
+      <div class="question">
+        <strong>Question 6: </strong>Which command to create a new file?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>touch index.html</code> to create new file name
+        <code> index.html. </code> For Windows Terminal it's little tricky by
+        using <code>type nul > index.html</code> to create empty file
+      </div>
+      <div class="question">
+        <strong>Question 7: </strong>You are in Desktop folder, which command to
+        make a new directory name coderschool and navigate inside it?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>mkdir coderschool && cd coderschool</code> at same line
+        to quick navigate
+      </div>
+      <div class="question">
+        <strong>Question 8: </strong>Which command to delete a file?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>rm index.html</code> to delete index.html file.
+      </div>
+      <div class="question">
+        <strong>Question 9: </strong>Which command to delete a not-empty folder?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>rm -rf index.html</code> to delete not-empty folder.
+        The <code> –recursive</code> or <code>-r</code> option with the
+        <code>rm</code> command will delete the files and sub-folders within it
+        recursively. the <code>–force</code> or <code>-f</code> option to avoid
+        getting prompted each time deleting each sub-folder and every file.
+      </div>
+      <div class="question">
+        <strong>Question 10:</strong> What does this command do?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <code>echo "# test" >> README.md</code> will create a new
+        <code>README.md</code> file if this file not exist and add
+        <code># test</code> to it's content or if there is a
+        <code>README.md</code> already exist it will add <code># test</code> to
+        it's content bottom line.
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Section 2: Git/Github (5%)</h3>
+
+      <div class="question">
+        <strong>Question 11: </strong> What does <code>.</code> mean in this
+        command:
+        <code> git add . </code>
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        The <code>.</code> here mean <code>current folder</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 12: </strong>What does <code>-m</code> mean, is it OK
+        without <code>-m</code> in this command?
+        <code> git commit -m "first commit" </code>
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        The option <code>-m</code> mean <code>message</code> and it's a must
+        when you push code to remote you must name this commit.
+        <code>-m</code> always following by a not-empty message.
+      </div>
+
+      <div class="question">
+        <strong>Question 13: </strong>What does <code>-M</code> mean in this
+        command:
+        <code> git branch -M main </code>
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <code>-M</code> meaning move/rename a branch, even if target exists
+      </div>
+
+      <div class="question">
+        <strong>Question 14: </strong>What do <code>origin</code> and
+        <code>main</code> mean in these commands:
+        <div></div>
+        <code
+          >git remote add origin
+          https://github.com/&ltacc_name&gt/&ltrepo_name&gt.git</code
+        >
+        <div></div>
+        <code>git push -u origin main</code>
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        The <code>origin</code> like a short name for
+        <code>https://github.com/&ltacc_name&gt/&ltrepo_name&gt.git</code> and
+        <code>main</code> here is name of <code>branch</code> your want to push
+        your code to remote repo
+      </div>
+
+      <div class="question">
+        <strong>Question 15: </strong> Which command to initialize a git repo in
+        local?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        We can use <code>git init</code> within folder we want to initialize a
+        git repo
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Section 3: HTML (10%)</h3>
+
+      <div class="question">
+        <strong>Question 16: </strong> Inside head tag, what does first meta tag
+        mean?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        This tag specifies the character encoding for the HTML document. Mostly
+        web developers to use the UTF-8 character set, due to it covers almost
+        all of the characters and symbols.
+      </div>
+
+      <div class="question">
+        <strong>Question 17: </strong> Inside head tag, what does second meta
+        tag mean?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        This tag let we take control over the viewport. This will affect the
+        page's dimensions and scaling.
+        <li>
+          The <code>width=device-width</code> part sets the width of the page to
+          follow the screen-width of the variable width device.
+        </li>
+        <li>
+          The <code>initial-scale=1.0</code> part sets the initial zoom level
+          when the page is first loaded by the browser.
+        </li>
+      </div>
+
+      <div class="question">
+        <strong>Question 18: </strong> Inside head tag, what is wrong with link
+        tag?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        It have wrong syntax <code>src=</code>. The right one is
+        <code> &ltlink rel="stylesheet" href="style.css" /&gt </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 19: </strong> List some tags that do not have closing
+        tag?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Some tags that do not have closing tag:
+        <ul>
+          <li>
+            <code> &ltbr&gt </code>
+          </li>
+          <li>
+            <code> &ltembed&gt </code>
+          </li>
+          <li>
+            <code> &lthr&gt </code>
+          </li>
+          <li>
+            <code> &ltimg&gt </code>
+          </li>
+          <li>
+            <code> &ltinput&gt </code>
+          </li>
+          <li>
+            <code> &ltlink&gt </code>
+          </li>
+          <li>
+            <code> &ltmeta&gt </code>
+          </li>
+          <li>...</li>
+        </ul>
+      </div>
+
+      <div class="question">
+        <strong>Question 20: </strong>Give some contexts of using
+        <code>span</code> tag?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <p>We can use with paragraph that take as block element like below</p>
+        <code>
+          &ltp&gt Adipisci vel temporibus ab tempore vero at suscipit, dolore
+          cum, veniam praesentium cupiditate ex quam earum? &lt/p&gt
+        </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 21: </strong>Give 1 example of creating a hyperlink by
+        a tag in html? (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <code>
+          <a href="www.google.com">Google</a>
+          <p>&lta href="www.google.com"&gtGoogle&lt/a&gt</p>
+        </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 22: </strong>Give 1 example of inserting a picture in
+        html? (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <code>
+          <img src="https://picsum.photos/100/100" alt="example-picture" />
+          <p>
+            &ltimg src="https://picsum.photos/100/100" alt="example-picture"&gt
+          </p>
+        </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 22a: </strong>Give 1 example of creating an email link
+        in html? (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <code>
+          <a
+            href="mailto:info@coderschool.com?subject=Hello this test so much little task"
+            >SOS HELP</a
+          >
+          <p>
+            &lta href="mailto:info@coderschool.com?subject=Hello this test so
+            much little task"&gtSOS HELP&lt/a&gt
+          </p>
+        </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 23: </strong> Create a form similar to the below
+        picture? (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <code>
+          <div
+            class="contact-box"
+            style="display: flex; flex-direction: column; width: 128px"
+          >
+            <label for="first-name">First name</label>
+            <input type="text" placeholder="John" />
+
+            <label for="last-name">Last name</label>
+            <input type="text" placeholder="Doe" />
+
+            <div class="" style="width: 32px">
+              <button>Submit</button>
+            </div>
+          </div>
+        </code>
+      </div>
+
+      <div class="question">
+        <strong>Question 24: </strong> Create a form with checkboxes similar to
+        the below picture? (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <div class="check-box">
+          <input type="checkbox" id="option-1" name="option-1" value="Bike" />
+          <label for="vehicle1"> I have a bike</label><br />
+          <input type="checkbox" id="option-2" name="option-2" value="Car" />
+          <label for="vehicle2"> I have a car</label><br />
+          <input type="checkbox" id="option-3" name="option-3" value="Boat" />
+          <label for="vehicle3"> I have a boat</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <strong>Question 25: </strong> How to add a YouTube video to html?
+        (answer with HTML code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        Example:
+        <div class="youtube-box">
+          <iframe
+            width="300"
+            height="150"
+            src="https://www.youtube.com/embed/hKRUPYrAQoE"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Section 4: CSS (10%)</h3>
+
+      <div class="question">
+        <strong>Question 26: </strong>Explain box model elements.
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        All the elements in an HTML document as rectangular boxes with their own
+        dimensions. These boxes contain a content area and optional surrounding
+        margin, border, and padding areas.
+      </div>
+
+      <div class="question">
+        <strong>Question 27: </strong>The value in inch of 1 px?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        It's depend on the dpi (pixel density or dots per inch). Assuming the
+        pixel density is 100 dpi, there are 100 pixels per inch. Then 1 pixel =
+        (1 / 100) inches.So for this case value of 1px in inch is 0.01 inches.
+      </div>
+
+      <div class="question"><strong>Question 28: </strong>What is vw/vh?</div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        vh stands for viewport height and vw is for viewport width. So, setting
+        an element to a width value of 50vw means that the element will have a
+        width that’s 50% of the viewport size even when the viewport is resized.
+      </div>
+
+      <div class="question">
+        <strong>Question 29: </strong>List all values of position property?
+        Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are five different position values:
+        <ul>
+          <li>static</li>
+          <li>relative</li>
+          <li>fixed</li>
+          <li>absolute</li>
+          <li>sticky</li>
+        </ul>
+        The default value is <code>position:static</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 30: </strong>List all values of flex-direction
+        property? Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are six different flex-direction values:
+        <ul>
+          <li>row</li>
+          <li>row-reverse</li>
+          <li>column</li>
+          <li>column-reverse</li>
+          <li>initial</li>
+          <li>inherit</li>
+        </ul>
+        The default value is <code>flex-direction:row</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 31: </strong>List all values of justify-content
+        property? Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are many different justify-content values:
+        <ul>
+          <li>flex-start</li>
+          <li>flex-end</li>
+          <li>center</li>
+          <li>space-between</li>
+          <li>space-around</li>
+          <li>space-evenly</li>
+          <li>initial</li>
+          <li>inherit</li>
+        </ul>
+        The default value is <code>justify-content:flex-start</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 32: </strong>List all values of align-items property?
+        Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are many different align-items values:
+        <ul>
+          <li>stretch</li>
+          <li>center</li>
+          <li>flex-start</li>
+          <li>flex-end</li>
+          <li>baseline</li>
+          <li>initial</li>
+          <li>inherit</li>
+        </ul>
+        The default value is <code>align-items:stretch</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 33: </strong>List all values of align-content property?
+        Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are many different align-content values:
+        <ul>
+          <li>stretch</li>
+          <li>center</li>
+          <li>flex-start</li>
+          <li>flex-end</li>
+          <li>space-between</li>
+          <li>space-around</li>
+          <li>initial</li>
+          <li>inherit</li>
+        </ul>
+        The default value is <code>align-content:stretch</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 34: </strong>List all values of flex-wrap property?
+        Which one is default value?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        There are many different flex-wrap values:
+        <ul>
+          <li>nowrap</li>
+          <li>wrap</li>
+          <li>wrap-reverse</li>
+          <li>initial</li>
+          <li>inherit</li>
+        </ul>
+        The default value is <code>flex-wrap:nowrap</code>
+      </div>
+
+      <div class="question">
+        <strong>Question 35: </strong>The different between space-between and
+        space-around in align-content property?
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <code> space-between </code> will lines are evenly distributed in the
+        flex container.
+
+        <code>space-around</code> will lines are evenly distributed in the flex
+        container, with half-size spaces on either end.
+      </div>
+
+      <div class="question">
+        <strong>Question 36: </strong>Create a box similar to the picture below?
+        (answer with HTML + CSS code)
+      </div>
+      <div class="answer">
+        <strong> Answer: </strong>
+        <div
+          class="box"
+          style="width: 300px; border: 1px solid black; display: flex"
+        >
+          <div
+            class="number"
+            style="
+              width: 50px;
+              height: 80px;
+              margin: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 28px;
+              font-weight: 800;
+              background-color: grey;
+            "
+          >
+            1
+          </div>
+          <div
+            class="number"
+            style="
+              width: 50px;
+              height: 80px;
+              margin: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 28px;
+              font-weight: 800;
+              background-color: grey;
+            "
+          >
+            2
+          </div>
+          <div
+            class="number"
+            style="
+              width: 50px;
+              height: 80px;
+              margin: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 28px;
+              font-weight: 800;
+              background-color: grey;
+            "
+          >
+            3
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Section 5 & 6 : Basic & Advanced JavaScript (10%)</h3>
+
+      <div>Please check <a href="script.js">here</a></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
